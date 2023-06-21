@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Home Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon_2.png" rel="icon">
+  <link href="static/img/favicon_1.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+  <!-- Tambahkan pustaka JavaScript yang diperlukan -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Vesperr
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="/">Graduate Admission</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#admission">Halaman Utama</a></li>
+          <li><a class="nav-link scrollto" href="#about">Tentang Aplikasi</a></li>
+          <li><a class="nav-link scrollto" href="#visualization">Visualisasi Data</a></li>
+          <li><a class="nav-link scrollto" href="#services">Fitur Prediksi</a></li>
+          {% comment %} <li><a class="nav-link scrollto" href="#team">Tentang Developer</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Hubungi Kami</a></li> {% endcomment %}
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Admission Section ======= -->
+  <section id="admission" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Selamat datang di Aplikasi Penerimaan Pascasarjana</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Klik di bawah untuk memprediksi peluang Anda untuk diterima pada proses penerimaan pascasarjana</h2>
+          <div data-aos="fade-up" data-aos-delay="800">
+            <a href="{% url 'display' %}" class="btn-get-started scrollto">Prediksi Peluang Anda</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 admission-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="static/img/admission-img.png" class="img-fluid animated" alt="">
+            <!-- Source: https://www.vhv.rs/ -->
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Admission -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Tentang Aplikasi</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <p style="text-align: justify;">
+              Siswa sering khawatir tentang peluang mereka untuk diterima di sekolah pascasarjana dan pasca sarjana. Proyek ini memberi mereka gambaran yang adil tentang peluang penerimaan mereka di universitas tertentu. Proyek ini juga harus membantu siswa yang sedang mempersiapkan atau akan mempersiapkan untuk mendapatkan ide yang lebih baik dengan tujuan sebagai berikut:
+            </p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <p style="text-align: justify;">
+              Siswa sering khawatir tentang peluang mereka untuk diterima di sekolah pascasarjana dan pasca sarjana. Proyek ini memberi mereka gambaran yang adil tentang peluang penerimaan mereka di universitas tertentu. Proyek ini juga harus membantu siswa yang sedang mempersiapkan atau akan mempersiapkan untuk mendapatkan ide yang lebih baik dengan tujuan sebagai berikut:
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+            <img src="static/img/graduate_1.jpg" alt="" class="img-fluid">
+            <!-- Source: https://stock.adobe.com/id/ -->
+          </div>
+
+          <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <div class="content d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span>Kelebihan 1</span>
+                    <p>Aplikasi prediksi graduate admission dapat memberikan perkiraan peluang diterima berdasarkan data dan statistik sebelumnya.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span>Kelebihan 2</span>
+                    <p>Aplikasi prediksi graduate admission dapat mengevaluasi profil mahasiswa berdasarkan kriteria penerimaan yang ditetapkan oleh program studi.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <span>Kelebihan 3</span>
+                    <p>Aplikasi prediksi graduate admission dapat membantu mahasiswa dalam melacak dan menganalisis status pendaftaran mereka ke program pascasarjana.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-award"></i>
+                    <span>Kelebihan 4</span>
+                    <p>Aplikasi prediksi graduate admission seringkali menyediakan tips dan sumber daya tambahan yang bermanfaat bagi mahasiswa dalam mempersiapkan pendaftaran.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Visualization Section ======= -->
+    <section id="visualization" class="visualization">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Visualisasi Data</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="150">
+            <canvas id="greChart"></canvas>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Visualization Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Fitur Prediksi</h2>
+          <p>Beberapa fitur yang digunakan dalam memprediksi penerimaan pascasarjana</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="static/img/icon/exam.png" class="img-fluid" alt="" width="45" height="45"></div>
+              <h4 class="title"><a href="">GRE Scores</a></h4>
+              <p class="description">Graduate Record Examination merupakan tes standar yang digunakan untuk mengukur kemampuan akademik dan potensi keberhasilan dalam studi pascasarjana (master's degree atau Ph.D.) di berbagai bidang. Jangkauan skor untuk GRE pada aplikasi ini adalah 260 hingga 340</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><img src="static/img/icon/test.png" class="img-fluid" alt="" width="38" height="38"></div>
+              <h4 class="title"><a href="">TOEFL Scores</a></h4>
+              <p class="description">Test of English as a Foreign Language merupakan tes standar yang dirancang untuk mengukur kemampuan berbahasa Inggris non-natif yang ingin belajar atau bekerja di lingkungan berbahasa Inggris. Jangkauan skor untuk TOEFL pada aplikasi ini adalah 0 hingga 120</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><img src="static/img/icon/rating.png" class="img-fluid" alt="" width="40" height="40"></div>
+              <h4 class="title"><a href="">University Rating</a></h4>
+              <p class="description">University Rating merupakan sebuah sistem penilaian atau peringkat yang digunakan untuk mengevaluasi dan membandingkan universitas di berbagai aspek serta disusun oleh beberapa organisasi dan lembaga berdasarkan kriteria tertentu. Jangkauan skor untuk University Rating pada aplikasi ini adalah 1 hingga 5</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><img src="static/img/icon/application.png" class="img-fluid" alt="" width="43" height="43"></div>
+              <h4 class="title"><a href="">SOP Strength</a></h4>
+              <p class="description">Statement of Purpose merupakan sebuah tulisan pribadi yang digunakan sebagai bagian dari aplikasi untuk pendidikan tingkat lanjut (seperti program sarjana, master, atau doktor) di perguruan tinggi atau universitas sebagai salah satu syarat untuk mempertimbangkan calon mahasiswa. Jangkauan skor untuk Statement of Purpose pada aplikasi ini adalah 1 hingga 5</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="container" style="margin-top: 30pt;">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><img src="static/img/icon/letter.png" class="img-fluid" alt="" width="40" height="40"></div>
+              <h4 class="title"><a href="">LOR Strength</a></h4>
+              <p class="description">Letter of Recommendation merupakan surat rekomendasi yang ditulis oleh seseorang (seperti dosen, pembimbing, atasan, atau orang yang mengenal calon mahasiswa dengan baik) untuk mendukung aplikasi pendidikan atau pekerjaan seseorang berdasarkan penilaian mengenai kemampuan, kualitas pribadi, dan potensi calon tersebut. Jangkauan skor untuk Letter of Recommendation pada aplikasi ini adalah 1 hingga 5</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><img src="static/img/icon/scholarship.png" class="img-fluid" alt="" width="44" height="44"></div>
+              <h4 class="title"><a href="">CGPA</a></h4>
+              <p class="description">Cumulative Grade Point Average atau rata-rata indeks prestasi kumulatif merupakan sistem pengukuran yang digunakan dalam banyak institusi pendidikan untuk mengevaluasi prestasi akademik seorang mahasiswa selama masa studi mereka. Jangkauan skor untuk Cumulative Grade Point Average pada aplikasi ini adalah 1 hingga 10</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><img src="static/img/icon/research.png" class="img-fluid" alt="" width="40" height="40"></div>
+              <h4 class="title"><a href="">Research Experience</a></h4>
+              <p class="description">Research experience merupakan pengalaman yang diperoleh seseorang dalam melakukan penelitian ilmiah sebagai bentuk keterlibatan kegiatan penelitian di bawah bimbingan atau kolaborasi dengan peneliti yang lebih berpengalaman, baik dalam lingkungan akademik, laboratorium, atau institusi penelitian. Jangkauan skor untuk Research experience pada aplikasi ini adalah 0 atau 1</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><img src="static/img/icon/statistics.png" class="img-fluid" alt="" width="38" height="38"></div>
+              <h4 class="title"><a href="">Chance of Admit</a></h4>
+              <p class="description">Chance of Admit merupakan hasil probabilitas atau peluang seorang calon mahasiswa diterima atau diterima dalam program studi atau perguruan tinggi yang diinginkan. Umumnya, peluang diterima dinyatakan dalam bentuk persentase atau nilai antara 0 hingga 1.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    {% comment %} <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Tentang Developer</h2>
+          <p>Tim yang menbangun aplikasi Penerimaan Pascasarjana</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" style="justify-content: center;">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="static/img/team/developer-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Burhanudin Zuhri</h4>
+                <span>Developer</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact" style="margin-bottom: 100pt;">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Hubungi Kami</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-about">
+              <h3>Graduate Admission</h3>
+              <p>Informasi lebih rinci dari aplikasi Graduate Admission ini dapat diakses pada sosial media berikut:</p>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="info">
+              <div>
+                <i class="ri-map-pin-line"></i>
+                <p>Jalan Sariasih No. 54<br>Sarijadi Bandung, 40151</p>
+              </div>
+
+              <div>
+                <i class="ri-mail-send-line"></i>
+                <p>graduateadmission@mail.com</p>
+              </div>
+
+              <div>
+                <i class="ri-phone-line"></i>
+                <p>+6281234567890</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" id="user" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section --> {% endcomment %}
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Graduate Admission</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- Designed by https://bootstrapmade.com/ -->
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+  <script>
+    // Ambil data dari konteks yang dikirimkan oleh views.py
+    const greScores = {{ gre_scores|safe }};
+
+    // Menghitung jumlah data
+    const totalData = greScores.length;
+
+    // Menghitung jumlah setiap nilai GRE score
+    const countScores = {};
+    for (let score of greScores) {
+        if (countScores[score]) {
+            countScores[score] += 1;
+        } else {
+            countScores[score] = 1;
+        }
+    }
+
+    // Menghitung persentase jumlah setiap nilai GRE score
+    const percentages = {};
+    for (let score in countScores) {
+        percentages[score] = (countScores[score] / totalData) * 100;
+    }
+
+    // Mengambil array nilai GRE score
+    const labels = Object.keys(percentages);
+
+    // Mengambil array persentase jumlah setiap nilai GRE score
+    const data = Object.values(percentages);
+
+    // Membuat visualisasi menggunakan Chart.js
+    const ctx = document.getElementById('greChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'GRE Score Distribution',
+                data: data,
+                backgroundColor: 'rgba(255, 69, 0, 0.75)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 10
+                }
+            }
+        }
+    });
+  </script>
+
+</body>
+
+</html>
